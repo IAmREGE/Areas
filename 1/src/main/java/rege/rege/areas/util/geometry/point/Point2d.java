@@ -1,9 +1,10 @@
-package rege.rege.areas.util;
+package rege.rege.areas.util.geometry.point;
 
 import java.util.Map;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
+import rege.rege.areas.util.Different;
 
 public class Point2d implements Map.Entry<Double, Double> {
     public final double x;

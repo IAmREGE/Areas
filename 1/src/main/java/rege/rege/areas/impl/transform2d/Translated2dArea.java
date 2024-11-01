@@ -3,7 +3,7 @@ package rege.rege.areas.impl.transform2d;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import rege.rege.areas.base.Area;
-import rege.rege.areas.util.Point2d;
+import rege.rege.areas.util.geometry.point.Point2d;
 
 public class Translated2dArea implements Area<Point2d> {
     @NotNull

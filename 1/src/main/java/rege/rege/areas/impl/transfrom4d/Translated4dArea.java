@@ -3,7 +3,7 @@ package rege.rege.areas.impl.transfrom4d;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import rege.rege.areas.base.Area;
-import rege.rege.areas.util.Point4d;
+import rege.rege.areas.util.geometry.point.Point4d;
 
 public class Translated4dArea implements Area<Point4d> {
     @NotNull

@@ -2,7 +2,7 @@ package rege.rege.areas.impl.simple2d;
 
 import org.jetbrains.annotations.Contract;
 import rege.rege.areas.base.Area;
-import rege.rege.areas.util.Point2d;
+import rege.rege.areas.util.geometry.point.Point2d;
 
 public class SimpleEllipseArea implements Area<Point2d> {
     @Contract(value = "_, _, _, _ -> new", pure = true)

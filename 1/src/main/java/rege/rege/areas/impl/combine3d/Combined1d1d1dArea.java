@@ -3,7 +3,7 @@ package rege.rege.areas.impl.combine3d;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import rege.rege.areas.base.Area;
-import rege.rege.areas.util.Point3d;
+import rege.rege.areas.util.geometry.point.Point3d;
 
 public class Combined1d1d1dArea implements Area<Point3d> {
     @NotNull

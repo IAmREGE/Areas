@@ -1,16 +1,17 @@
-package rege.rege.areas.util;
+package rege.rege.areas.util.geometry.point;
 
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
+import rege.rege.areas.util.Different;
 
 @Different
-public class Point3d extends Point2d {
-    public final double z;
+public class Point4d extends Point3d {
+    public final double w;
 
     @Contract(pure = true)
-    public Point3d(double x, double y, double z) {
-        super(x, y);
-        this.z = z;
+    public Point4d(double x, double y, double z, double w) {
+        super(x, y, z);
+        this.w = w;
     }
 
     @Override
@@ -19,15 +20,16 @@ public class Point3d extends Point2d {
         if (this == o) {
             return true;
         }
-        if ((!(o instanceof Point3d)) ||
+        if ((!(o instanceof Point4d)) ||
             (o.getClass() != this.getClass() &&
              o.getClass().isAnnotationPresent(Different.class))) {
             return false;
         }
-        Point3d that = (Point3d)o;
+        Point4d that = (Point4d)o;
         return Double.compare(this.x, that.x) == 0 &&
                Double.compare(this.y, that.y) == 0 &&
-               Double.compare(this.z, that.z) == 0;
+               Double.compare(this.z, that.z) == 0 &&
+               Double.compare(this.w, that.w) == 0;
     }
 
     @Override
@@ -35,7 +37,7 @@ public class Point3d extends Point2d {
     public int hashCode() {
         long temp = super.hashCode();
         int result = (int)(temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(this.z);
+        temp = Double.doubleToLongBits(this.w);
         result = 31 * result + (int)(temp ^ (temp >>> 32));
         return result;
     }
@@ -44,7 +46,7 @@ public class Point3d extends Point2d {
     @Contract(pure = true)
     @NotNull
     public String toString() {
-        return Point3d.class.getName() + '{' + "x=" + this.x + ", y=" +
-               this.y + ", z=" + this.z + '}';
+        return Point4d.class.getName() + '{' + "x=" + this.x + ", y=" +
+               this.y + ", z=" + this.z + ", w=" + this.w + '}';
     }
 }

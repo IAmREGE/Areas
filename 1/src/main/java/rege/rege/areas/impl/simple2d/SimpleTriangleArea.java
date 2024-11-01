@@ -1,7 +1,7 @@
 package rege.rege.areas.impl.simple2d;
 
 import rege.rege.areas.base.Area;
-import rege.rege.areas.util.Point2d;
+import rege.rege.areas.util.geometry.point.Point2d;
 
 public class SimpleTriangleArea implements Area<Point2d> {
 //    public final double x1;

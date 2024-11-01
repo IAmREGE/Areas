@@ -4,7 +4,7 @@ import java.util.Map;
 
 import org.jetbrains.annotations.Contract;
 import rege.rege.areas.util.NamedArea;
-import rege.rege.areas.util.Point2d;
+import rege.rege.areas.util.geometry.point.Point2d;
 
 public class SimpleNamedRectangleArea implements NamedArea<Point2d> {
     @Contract(value = "_, _, _ -> new", pure = true)
