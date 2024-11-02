@@ -13,7 +13,7 @@
 
   <groupId>rege.rege.areas</groupId>
   <artifactId>areas</artifactId>
-  <version>0.0.1a1</version>
+  <version>0.0.1-a.1</version>
   <packaging>jar</packaging>
 
   <name>areas</name>
