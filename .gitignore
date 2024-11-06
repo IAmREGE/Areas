@@ -1,10 +1,10 @@
 .gradle
-target
+target/
 **/build/
 **/bin/
 !src/**/build/
 !src/**/bin/
-target/
+!src/**/target/
 run/
 out/
 

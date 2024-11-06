@@ -1,1 +1,0 @@
-package rege.rege.areas.impl.simple4d;

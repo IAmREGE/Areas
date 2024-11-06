@@ -1,9 +1,25 @@
 package rege.rege.areas.util.geometry.line;
 
 import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 import rege.rege.areas.util.geometry.point.Point2d;
 
 public class Line2d {
+    @NotNull
+    public static Line2d ofSlopeInterceptForm(double k, double b) {
+        return new Line2d(k, -1, b);
+    }
+
+    @NotNull
+    public static Line2d ofInterceptForm(double a, double b) {
+        return new Line2d(1. / a, 1. / b, -1);
+    }
+
+    @NotNull
+    public static Line2d ofPointSlopeForm(double k, double x1, double y1) {
+        return new Line2d(k, -1, y1 - (k * x1));
+    }
+
     public final double a;
     public final double b;
     public final double c;
