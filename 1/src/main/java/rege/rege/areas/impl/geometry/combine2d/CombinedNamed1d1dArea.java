@@ -45,8 +45,8 @@ public class CombinedNamed1d1dArea implements NamedArea<Point2d> {
         return this.namedAsX ? this.named.contains(new NamedPoint<Double>(
                    point.getKey(), POINT.x
                )) && this.nameless.contains(POINT.y) :
-               this.nameless.contains(POINT.x) && this.named.containsNamed(
-                   point.getKey(), POINT.y
-               );
+               (this.nameless.contains(POINT.x) && this.named.contains(
+                   new NamedPoint<Double>(point.getKey(), POINT.y)
+                ));
     }
 }
